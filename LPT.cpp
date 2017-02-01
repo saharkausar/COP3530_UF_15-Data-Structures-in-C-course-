@@ -1,13 +1,72 @@
+/*
+ Created by Sahar Kausar (Fall 2015 COP3530 - Data Structures with C++)
+ Please do not copy or redistribute without permission.
+ 
+ Assignment: Longest Processing Time
+ */
+
 /**
+ What the program does:
  
- Name : Sahar Kausar Hussain
+Scheduling is an NP-hard optimization problem. However, it is applicable in a vast number of fields and situations. An often used heuristic for this problem is the Longest Processing Time algorithm. The Longest Processing Time algorithm is implemented as follows. The algorithm will be implemented in two versions using two different representations of a minimum priority queue. The first implementation will use an array-based  min-heap. The second implementation will use a pointer-based min height-biased leftist tree.
  
- UF ID: 30887953
+ For both implementations of the Min Priority Queue data structure, the following is implemented: a constructor, destructor, empty, size, push, top, and pop functions.
+ -	The meld function of the leftist heap implementation is recursive.
+ -	The empty function returns a bool of whether or not the priority queue is empty.
+ -	The size function returns the current number of elements in the priority queue.
+ -	The push function inserts an element into the priority queue.
+ -	The top function returns the element with the min priority.
+ -	The pop function removes the element with the min priority.
+ When running the dataset on each version, the finishing time is outputted.
+ The program will also print the schedule.
+
  
- Gator ID: sahar.kausar
+ Example Run:
  
- Discussion section # : 1087
+ OUTPUT>> Enter number of job(s):
+ USER INPUT >> 7
+ OUTPUT>> Enter number of machine(s):
+ USER INPUT >> 3
+ OUTPUT>> Enter Processing Time(s):
+ USER INPUT >> 14
+ USER INPUT >> 7
+ USER INPUT >> 10
+ USER INPUT >> 6
+ USER INPUT >> 2
+ USER INPUT >> 3
+ USER INPUT >> 5
  
+ OUTPUT>> Min Heap Finishing Time: 16
+ OUTPUT>> Schedule:
+ OUTPUT>> Machine 1: 14, 2
+ OUTPUT>> Machine 2: 10, 5
+ OUTPUT>> Machine 3: 7, 6, 3
+ OUTPUT>> Time Elapsed: 3.882e-06
+ 
+ OUTPUT>> Height Biased Leftist Tree Finishing Time: 16
+ OUTPUT>> Schedule:
+ OUTPUT>> Machine 1: 14, 2
+ OUTPUT>> Machine 2: 10, 5
+ OUTPUT>> Machine 3: 7, 6, 3
+ OUTPUT>> Time Elapsed: 3.927e-06
+ 
+ USER INPUT >> Note: Your elapsed times will likely differ from these.
+
+ 
+ **/
+
+/**
+ How to Compile and Execute:
+ 
+ Download the file to your desired root folder on your computer. Open the terminal or executable IDE program to compile and run the file. Enter the following in the quotes (make sure to omit the quotes): "g++ -o (desiredNameOfFile) LPT.cpp"
+ 
+ For example, you may enter the following: "g++ -o LPT LPT.cpp"
+ 
+ The program will then compile. Run the program by typing "./(desiredNameOfFile)"
+ 
+ In the above example, you may have entered: "./LPT"
+ 
+ The program will then run and the user may follow the prompt. Enjoy!
  
  **/
 

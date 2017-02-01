@@ -1,13 +1,70 @@
+/*
+ Created by Sahar Kausar (Fall 2015 COP3530 - Data Structures with C++)
+ Please do not copy or redistribute without permission.
+ 
+ Assignment: Minimum Spanning Trees
+ */
+
 /**
+ What the program does:
  
- Name : Sahar Kausar Hussain
+ For a weighted, connected, undirected graph, a Spanning Tree is a sub-graph that includes all the vertices of the original graph, and is also a tree. A Minimum-Cost Spanning Tree is a spanning tree with the smallest sum of its edges’ costs. Uses of Minimum-Cost Spanning Trees range from Taxonomy to Clustering analysis.
+ In this assignment, the following is implemented: Kruskal’s, Boruvka’s (Sollin’s) , and Prim’s algorithms to produce Minimum-Cost Spanning Trees from an undirected graph. The implemented Kruskal’s algorithm is done without the Union-Find operation.
  
- UF ID: 30887953
  
- Gator ID: sahar.kausar
+ Example Run:
  
- Discussion section # : 1087
+ OUTPUT>> Enter number of Node and Edges(s): 
+ USER INPUT>> 4 5
  
+ OUTPUT>> Enter Node A and Node B and Undirected Edge Weight(s):
+ USER INPUT>> 0 1 5
+ USER INPUT>> 1 3 4
+ USER INPUT>> 3 2 2
+ USER INPUT>> 2 0 7
+ USER INPUT>> 1 2 10
+ 
+ OUTPUT>> Enter the start Node:
+ USER INPUT>> 0
+ 
+ OUTPUT>> Prim's MST:
+ OUTPUT>> (0, 1)
+ OUTPUT>> (1, 3)
+ OUTPUT>> (2, 3)
+ OUTPUT>> Total Weight:
+ OUTPUT>> 11
+ 
+ OUTPUT>> Kruskal's MST:
+ OUTPUT>> (2, 3)
+ OUTPUT>> (1, 3)
+ OUTPUT>> (0, 1)
+ OUTPUT>> Total Weight:
+ OUTPUT>> 11
+ 
+ OUTPUT>> Boruvka’s MST:
+ OUTPUT>> (0, 1)
+ OUTPUT>> (2, 3)
+ OUTPUT>> (1, 3)
+ OUTPUT>> Total Weight:
+ OUTPUT>> 11
+ 
+ Note: Edge(s) are undirected and weighted.
+ 
+ 
+ **/
+
+/**
+ How to Compile and Execute:
+ 
+ Download the file to your desired root folder on your computer. Open the terminal or executable IDE program to compile and run the file. Enter the following in the quotes (make sure to omit the quotes): "g++ -o (desiredNameOfFile) MST.cpp"
+ 
+ For example, you may enter the following: "g++ -o MST MST.cpp"
+ 
+ The program will then compile. Run the program by typing "./(desiredNameOfFile)"
+ 
+ In the above example, you may have entered: "./MST"
+ 
+ The program will then run and the user may follow the prompt. Enjoy!
  
  **/
 
